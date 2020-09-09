@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="testeUm"
+    errors="0" failures="1" hostname="" id="" package="testeUm" skipped="0"
+    tests="1" time="44.91" timestamp="">
+  
+    <testcase name="Demo test ecosia.org" classname="testeUm" time="44.91" assertions="3">
+
+    
+
+      <failure message="Testing if the page title contains &#39;Ecosia&#39; in 5000ms - expected &#34;contains &#39;Ecosia&#39;&#34; but got: &#34;&#34; (5155ms)">    at Object.Demo test ecosia.org (/home/didimo/Área de Trabalho/Bruna/robo_teste/tests/testeUm.js:13:21)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
