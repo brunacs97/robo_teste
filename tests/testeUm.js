@@ -94,7 +94,7 @@ module.exports = {
     "Logar": () => Empresa.login(),
     "Primero Cadastro": () => Empresa.create({
     	"params": {
-    		"nome": "NOME",
+    		"nome": "teste",
 	        "nomeFantasia": "Fantasia",
 	        "cnpj": "123123123",
 	        "cep": "123123",
@@ -105,7 +105,7 @@ module.exports = {
 	        "cidade": "cidade"
     	}
     }),
-    "Segundo Cadastro": () => Empresa.create({
+    /*"Segundo Cadastro": () => Empresa.create({
     	"params": {
     		"nome": "NOME",
 	        "nomeFantasia": "Fantasia",
@@ -118,5 +118,5 @@ module.exports = {
 	        "cidade": "cidade",
     	},
     	"cnpjDuplicado": true
-    }),
+    }),*/
 }

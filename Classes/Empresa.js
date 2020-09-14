@@ -2,8 +2,7 @@ const BaseConnector = require('./BaseConnector');
 
 module.exports = class Empresa extends BaseConnector {
 
-    constructor()
-    {
+    constructor() {
         super();
         this.receipt = {
             "nome": "#formulario_empresa > div > form > div.card-body > div > div:nth-child(1) > input",
@@ -18,10 +17,9 @@ module.exports = class Empresa extends BaseConnector {
         }
     }
 
-    async create(formData)
-    {
+    async create(formData) {
         this.browser
-            //clicando em cadastro e consulta
+        //clicando em cadastro e consulta
             .waitForElementVisible('body')
             .url('https://desenvolvimento.arkmeds.com/cadastros/empresa/novo/')
             //esperando carregar o chat
@@ -41,9 +39,9 @@ module.exports = class Empresa extends BaseConnector {
         await this.fillInputs(inputsData);
 
 
-        this.browser   
+        this.browser
 
-            //selecionando um tipo de empresa
+        //selecionando um tipo de empresa
             .click('#formulario_empresa > div > form > div.card-body > div > div:nth-child(3) > span > span.selection > span')
             .click('#select2-tipo-results > li:nth-child(2)')
 
@@ -57,16 +55,50 @@ module.exports = class Empresa extends BaseConnector {
             .click('#home > div > div:nth-child(7) > span > span.selection > span')
             .click('#select2-estado-results > li:nth-child(3)')
 
+            //selecionando aba contato
+            .click('#profile-tab')
+            .waitForElementVisible('#profile > div > div:nth-child(1) > input')
+
+
+            //preenchendo dados da aba contato
+            .setValue(" #profile > div > div:nth-child(1) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+            .setValue(" #profile > div > div:nth-child(3) > input", "89",)
+            .setValue(" #profile > div > div:nth-child(5) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+            .setValue(" #profile > div > div:nth-child(2) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+            .setValue(" #profile > div > div:nth-child(4) > input", "123",)
+
+            //selecionando aba observação
+            .click('#contact-tab')
+            .waitForElementVisible('  #contact > div:nth-child(1) > div > textarea')
+            .setValue("#contact > div:nth-child(1) > div > textarea", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+
+            //clicando em adicionar anexo
+            .setValue('input[type="file"]', require('path').resolve('/home/didimo/Downloads/Imagens/1.png'))
+
+            //Clicando na aba PMOC
+            .click('#pmoc-tab')
+            //esperando input aparecer e setando valores
+            .waitForElementVisible('  #pmoc > div > div:nth-child(1) > input')
+            .setValue("#pmoc > div > div:nth-child(1) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+            .setValue("#pmoc > div > div:nth-child(2) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+            .setValue("#pmoc > div > div:nth-child(3) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+
             //salvando empresa
-            .click('#formulario_empresa > div > form > div.p-0.border-0.card-footer > div.button-container > button');
+            .click('#formulario_empresa > div > form > div.p-0.border-0.card-footer > div.button-container > button')
 
 
-        if(formData.cnpjDuplicado) {
+            .pause(20000)
+
+
+        if (formData.nome) {
             this.browser
-                .waitForElementPresent('body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-text', 10 * 1000)
-                .assert.containsText("body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-text", "CNPJ já cadastrado no sistema");
+                .waitForElementPresent('#formulario_empresa > div > form > div.card-body > div > div:nth-child(1) > input', 10 * 1000)
+                .assert.containsText("#formulario_empresa > div > form > div.card-body > div > div:nth-child(1) > input", "")
+
+
         }
 
     }
+
 
 }

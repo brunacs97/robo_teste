@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="4">
+            tests="3">
 
   <testsuite name="testeUm"
     errors="0" failures="0" hostname="" id="" package="testeUm" skipped="0"
-    tests="4" time="22.20" timestamp="">
+    tests="3" time="42.74" timestamp="">
   
     <testcase name="Init" classname="testeUm" time="0.000" assertions="0">
     </testcase>
   
-    <testcase name="Logar" classname="testeUm" time="9.861" assertions="1">
+    <testcase name="Logar" classname="testeUm" time="12.34" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Primero Cadastro" classname="testeUm" time="4.885" assertions="3">
+    <testcase name="Primero Cadastro" classname="testeUm" time="30.40" assertions="6">
 
     
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Segundo Cadastro" classname="testeUm" time="7.459" assertions="5">
 
     
 
