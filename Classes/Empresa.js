@@ -79,9 +79,9 @@ module.exports = class Empresa extends BaseConnector {
             .click('#pmoc-tab')
             //esperando input aparecer e setando valores
             .waitForElementVisible('  #pmoc > div > div:nth-child(1) > input')
-            .setValue("#pmoc > div > div:nth-child(1) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
-            .setValue("#pmoc > div > div:nth-child(2) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
-            .setValue("#pmoc > div > div:nth-child(3) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
+            .setValue("#pmoc > div > div:nth-child(1) > input", "70",)
+            .setValue("#pmoc > div > div:nth-child(2) > input", "80",)
+            .setValue("#pmoc > div > div:nth-child(3) > input", "90",)
 
             //salvando empresa
             .click('#formulario_empresa > div > form > div.p-0.border-0.card-footer > div.button-container > button')
