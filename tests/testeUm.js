@@ -96,7 +96,7 @@ module.exports = {
     	"params": {
     		"nome": "teste",
 	        "nomeFantasia": "Fantasia",
-	        "cnpj": "2020",
+	        "cnpj": "9",
 	        "cep": "123123",
 	        "rua": "Rua",
 	        "numero": "22",
