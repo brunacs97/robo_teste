@@ -147,12 +147,12 @@ module.exports = class Empresa extends BaseConnector {
                 .waitForElementVisible('  #contact > div:nth-child(1) > div > textarea')
                 .setValue("#contact > div:nth-child(1) > div > textarea", "7",)
 
-                //clicando em adicionar anexo
+                //clicando em editar anexo
                 .setValue('input[type="file"]', require('path').resolve('/home/didimo/Downloads/Imagens/1.png'))
 
                 //Clicando na aba PMOC
                 .click('#pmoc-tab')
-                //esperando input aparecer e setando valores
+                //esperando input aparecer e editando valores
                 .waitForElementVisible('  #pmoc > div > div:nth-child(1) > input')
                 .waitForElementVisible('  #pmoc > div > div:nth-child(2) > input')
                 .waitForElementVisible('  #pmoc > div > div:nth-child(3) > input')

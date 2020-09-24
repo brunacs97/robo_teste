@@ -4,7 +4,6 @@
     <list default="true" id="7d7b9855-a7b7-4e1b-9cc1-cd24a9dae420" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Empresa.js" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Empresa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testeUm.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testeUm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_output/CHROME_74.0.3729.169_Linux_testeUm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests_output/CHROME_74.0.3729.169_Linux_testeUm.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/testeUm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="-809">
               <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
             </state>
           </provider>
@@ -33,20 +32,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/BaseConnector.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Empresa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="136" column="48" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
+            <state relative-caret-position="1965">
+              <caret line="167" column="9" lean-forward="true" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -65,10 +64,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/Classes/BaseConnector.js" />
         <option value="$PROJECT_DIR$/nightwatch.conf.js" />
         <option value="$PROJECT_DIR$/tests/testeUm.js" />
         <option value="$PROJECT_DIR$/Classes/Empresa.js" />
+        <option value="$PROJECT_DIR$/Classes/BaseConnector.js" />
       </list>
     </option>
   </component>
@@ -157,12 +156,12 @@
       <workItem from="1599830887263" duration="9367000" />
       <workItem from="1600180224217" duration="16892000" />
       <workItem from="1600704607483" duration="3991000" />
-      <workItem from="1600779563767" duration="6820000" />
+      <workItem from="1600779563767" duration="9412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64423000" />
+    <option name="totallyTimeSpent" value="67015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
@@ -205,13 +204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/testeUm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nightwatch.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -219,17 +211,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/BaseConnector.js">
+    <entry file="file://$PROJECT_DIR$/Classes/Empresa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="1965">
+          <caret line="167" column="9" lean-forward="true" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Empresa.js">
+    <entry file="file://$PROJECT_DIR$/tests/testeUm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="136" column="48" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
+        <state relative-caret-position="-809">
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/BaseConnector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
