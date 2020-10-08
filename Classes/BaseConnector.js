@@ -14,7 +14,7 @@ module.exports = class BaseConnector {
     {
         this.browser
             .url('https://desenvolvimento.arkmeds.com/usuarios/conectar?next=/')
-            .waitForElementVisible('body')
+            .waitForElementVisible('body',30000)
             .setValue("#inputEmail", "a@a.com",)
             .setValue("#inputPassword", "a",)
             .click('button[type=submit]');
@@ -24,7 +24,7 @@ module.exports = class BaseConnector {
     {
         return new Promise(async(resolve, reject) => {
             this.browser
-                .waitForElementPresent('#crisp-chatbox', 10 * 1000)
+                .waitForElementPresent('#crisp-chatbox', 30000)
                 .execute(function () {
                     document.querySelector('#crisp-chatbox').innerHTML = '';
                 }, () => {
