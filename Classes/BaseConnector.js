@@ -1,28 +1,6 @@
 module.exports = class BaseConnector {
-
-    constructor()
-    {
-
-    }
-
-    init(browser)
-    {
-        this.browser = browser;
-    }
-
-    login()
-    {
-        this.browser
-            .url('https://desenvolvimento.arkmeds.com/usuarios/conectar?next=/')
-            .waitForElementVisible('body',30000)
-            .setValue("#inputEmail", "a@a.com",)
-            .setValue("#inputPassword", "a",)
-            .click('button[type=submit]');
-    }
-
-    removeChat()
-    {
-        return new Promise(async(resolve, reject) => {
+    removeChat() {
+        return new Promise(async (resolve, reject) => {
             this.browser
                 .waitForElementPresent('#crisp-chatbox', 30000)
                 .execute(function () {
@@ -31,23 +9,5 @@ module.exports = class BaseConnector {
                     resolve(true);
                 })
         });
-    }
-
-    async fillInputs(data)
-    {
-        return new Promise(async(resolve, reject) => {
-            for(let item in data) {
-                await this.asyncSetValue(data[item].path, data[item].value);
-
-            }
-            resolve(true);
-        });
-    }
-
-    asyncSetValue(selector, value)
-    {
-        return new Promise((resolve, reject) => {
-            this.browser.setValue(selector, value, () => resolve(true));
-        }) 
     }
 }

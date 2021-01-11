@@ -13,6 +13,6 @@
     "nightwatch": "^1.4.1"
   },
   "devDependencies": {
-    "chromedriver": "^74"
+    "chromedriver": "^87"
   }
 }
