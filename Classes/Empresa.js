@@ -48,7 +48,7 @@ module.exports = class Empresa extends BaseConnector {
             //selecionando um superior
             .click('#formulario_empresa > div > form > div.card-body > div > div:nth-child(4) > span > span.selection > span')
             .click('body > span > span > span.select2-search.select2-search--dropdown > input')
-            .setValue("body > span > span > span.select2-search.select2-search--dropdown > input", "AAA",)
+            .setValue("body > span > span > span.select2-search.select2-search--dropdown > input", "a",)
             .click('#select2-superior-results > li.select2-results__option.select2-results__option--highlighted')
 
             //salvando estado
@@ -73,7 +73,7 @@ module.exports = class Empresa extends BaseConnector {
             .setValue("#contact > div:nth-child(1) > div > textarea", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ",)
 
             //clicando em adicionar anexo
-            .setValue('input[type="file"]', require('path').resolve('/home/didimo/Downloads/Imagens/1.png'))
+            .setValue('input[type="file"]', require('path').resolve('/home/didimo/Imagens/1.png'))
 
             //Clicando na aba PMOC
             .click('#pmoc-tab')
@@ -152,7 +152,7 @@ module.exports = class Empresa extends BaseConnector {
                 .setValue("#contact > div:nth-child(1) > div > textarea", "7",)
 
                 //clicando em editar anexo
-                .setValue('input[type="file"]', require('path').resolve('/home/didimo/Downloads/Imagens/1.png'))
+                .setValue('input[type="file"]', require('path').resolve('/home/didimo/Imagens/1.png'))
 
                 //Clicando na aba PMOC
                 .click('#pmoc-tab')
@@ -168,76 +168,83 @@ module.exports = class Empresa extends BaseConnector {
                 .click('#formulario_empresa > div > form > div.p-0.border-0.card-footer > div.button-container > button')
                 .waitForElementVisible('body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-footer > div > button', 30000)
                 .click('body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-footer > div > button')
+
                 //excluindo empresa
                 .waitForElementVisible('#main-content-wrapper > div > div.main-content > div:nth-child(10) > div > div > div.widget-content.list > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(3) > a', 30000)
                 .click('#main-content-wrapper > div > div.main-content > div:nth-child(10) > div > div > div.widget-content.list > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(3) > a')
+                .waitForElementVisible('div.modal-dialog > div > div.modal-footer > form > button.btn.btn-danger > strong')
+                .click('div.modal-dialog > div > div.modal-footer > form > button.btn.btn-danger > strong')
 
-            await this.removeChat();
-            this.browser
-                .click('div.modal-dialog > div > div.modal-footer > form > button.btn.btn-danger')
-                .click('#cadastro > ul > li:nth-child(2)')
-                .click('#jump-base-3')
-                //ADICIONANDO EQUIPAMENTO
-                .waitForElementVisible('#formulario_equipamento > div > form > div.card-body > div > div.form-group.ark-form.ark-addon-input.col-lg-6.col-sm-12 > span > span.selection > span\n', 30000)
-                .click('#formulario_equipamento > div > form > div.card-body > div > div.form-group.ark-form.ark-addon-input.col-lg-6.col-sm-12 > span > span.selection > span    \n')
-            await this.removeChat();
-            this.browser
-                .setValue("body > span > span > span.select2-search.select2-search--dropdown > input", "banh",)
-                //adicionando Tipo*:
-                .waitForElementVisible('#select2-tipo-results > li:nth-child(1)', 30000)
-                .click('#select2-tipo-results > li:nth-child(1)')
-                //adicionando modelo
-                .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(3) > input", "teste modelo '\"!@#$%&*()-+Aaç<>}70/, aãÂ")
-                //adicionando fabricante
-                .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(2) > input", "teste fabricante '\"!@#$%&*()-+Aaç<>}70/, aãÂ")
-                //adicionando estado do equipamento
-                .click('#formulario_equipamento > div > form > div.card-body > div > div:nth-child(4) > span > span.selection > span')
-                .waitForElementVisible('#select2-estado-results > li.select2-results__option.select2-results__option--highlighted', 30000)
-                .click('#select2-estado-results > li.select2-results__option.select2-results__option--highlighted')
-                //adicionando Proprietário*:
-                .click('#formulario_equipamento > div > form > div.card-body > div > div:nth-child(5) > span > span.selection > span')
-                .setValue("body > span > span > span.select2-search.select2-search--dropdown > input", "a")
-                .waitForElementVisible('#select2-proprietario-results > li:nth-child(1)', 30000)
-                // .click('#select2-proprietario-results > li:nth-child(1)')
-                .click('#select2-proprietario-results > li.select2-results__option.select2-results__option--highlighted')
-                //adicionando  Identificação/TAG:
-                .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(6) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
-                //adicionando numero de serie
-                .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(7) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
-                //adicionando patrimonio
-                .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(8) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
-                //adicionando Portaria INMETRO:
-                .setValue(" #formulario_equipamento > div > form > div.card-body > div > div:nth-child(9) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
-                //adicionando prioridade
-                .click(' #select2-prioridade-container')
-                .click('#formulario_equipamento > div > form > div.card-body > div > div:nth-child(10) > span > span.selection > span > span.select2-selection__rendered')
 
-                //selecionando Modo de Uso*:
-                .click('#uso_padrao')
 
-                //Adicionando data de fabricação
-                .setValue("#data_fabricacao", "05/01/2021")
+               //
+            // await this.removeChat();
+            // this.browser
+            //     .click('div.modal-dialog > div > div.modal-footer > form > button.btn.btn-danger')
+            //     .click('#cadastro > ul > li:nth-child(2)')
+            //     .click('#jump-base-3')
 
-                //adicionando data de aquisição
-                .setValue("##data_aquisicao", "05/01/2021")
-
-                //adicionando valor de compra
-                .setValue("#valor_compra", "5260")
-
-                //adicionando valor residual
-                .setValue("#valor_residual", "5260")
-
-                //adicionando vida util
-                .setValue("#vida_util", "5")
-
-                //adicionando garantia
-                .setValue("#garantia", "05/01/2021")
-
-                //adicionando risco de operação
-                .setValue("#home > div > div:nth-child(7) > input", "6")
-
-                //clicando na aba informações extras
-                .click('#myTab > li.nav-item.active')
+            //     //ADICIONANDO EQUIPAMENTO
+            //     .waitForElementVisible('#formulario_equipamento > div > form > div.card-body > div > div.form-group.ark-form.ark-addon-input.col-lg-6.col-sm-12 > span > span.selection > span\n', 30000)
+            //     .click('#formulario_equipamento > div > form > div.card-body > div > div.form-group.ark-form.ark-addon-input.col-lg-6.col-sm-12 > span > span.selection > span    \n')
+            // await this.removeChat();
+            // this.browser
+            //     .setValue("body > span > span > span.select2-search.select2-search--dropdown > input", "banh",)
+            //     //adicionando Tipo*:
+            //     .waitForElementVisible('#select2-tipo-results > li:nth-child(1)', 30000)
+            //     .click('#select2-tipo-results > li:nth-child(1)')
+            //     //adicionando modelo
+            //     .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(3) > input", "teste modelo '\"!@#$%&*()-+Aaç<>}70/, aãÂ")
+            //     //adicionando fabricante
+            //     .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(2) > input", "teste fabricante '\"!@#$%&*()-+Aaç<>}70/, aãÂ")
+            //     //adicionando estado do equipamento
+            //     .click('#formulario_equipamento > div > form > div.card-body > div > div:nth-child(4) > span > span.selection > span')
+            //     .waitForElementVisible('#select2-estado-results > li.select2-results__option.select2-results__option--highlighted', 30000)
+            //     .click('#select2-estado-results > li.select2-results__option.select2-results__option--highlighted')
+            //     //adicionando Proprietário*:
+            //     .click('#formulario_equipamento > div > form > div.card-body > div > div:nth-child(5) > span > span.selection > span')
+            //     .setValue("body > span > span > span.select2-search.select2-search--dropdown > input", "a")
+            //     .waitForElementVisible('#select2-proprietario-results > li:nth-child(1)', 30000)
+            //     // .click('#select2-proprietario-results > li:nth-child(1)')
+            //     .click('#select2-proprietario-results > li.select2-results__option.select2-results__option--highlighted')
+            //     //adicionando  Identificação/TAG:
+            //     .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(6) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
+            //     //adicionando numero de serie
+            //     .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(7) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
+            //     //adicionando patrimonio
+            //     .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(8) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
+            //     //adicionando Portaria INMETRO:
+            //     .setValue(" #formulario_equipamento > div > form > div.card-body > div > div:nth-child(9) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
+            //     //adicionando prioridade
+            //     .click(' #select2-prioridade-container')
+            //     .click('#formulario_equipamento > div > form > div.card-body > div > div:nth-child(10) > span > span.selection > span > span.select2-selection__rendered')
+            //
+            //     //selecionando Modo de Uso*:
+            //     .click('#uso_padrao')
+            //
+            //     //Adicionando data de fabricação
+            //     .setValue("#data_fabricacao", "05/01/2021")
+            //
+            //     //adicionando data de aquisição
+            //     .setValue("##data_aquisicao", "05/01/2021")
+            //
+            //     //adicionando valor de compra
+            //     .setValue("#valor_compra", "5260")
+            //
+            //     //adicionando valor residual
+            //     .setValue("#valor_residual", "5260")
+            //
+            //     //adicionando vida util
+            //     .setValue("#vida_util", "5")
+            //
+            //     //adicionando garantia
+            //     .setValue("#garantia", "05/01/2021")
+            //
+            //     //adicionando risco de operação
+            //     .setValue("#home > div > div:nth-child(7) > input", "6")
+            //
+            //     //clicando na aba informações extras
+            //     .click('#myTab > li.nav-item.active')
 
 
 
