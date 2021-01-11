@@ -1,77 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
-            tests="3">
+            failures="1"
+            tests="2">
 
   <testsuite name="testeUm"
-    errors="0" failures="0" hostname="" id="" package="testeUm" skipped="0"
-    tests="3" time="66.66" timestamp="">
+    errors="0" failures="1" hostname="" id="" package="testeUm" skipped="1"
+    tests="2" time="34.24" timestamp="">
   
     <testcase name="Init" classname="testeUm" time="0.001000" assertions="0">
     </testcase>
   
-    <testcase name="Logar" classname="testeUm" time="4.540" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="Primero Cadastro" classname="testeUm" time="62.11" assertions="29">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="Logar" classname="testeUm" time="34.24" assertions="1">  <failure message="Timed out while waiting for element &lt;body&gt; to be present for 30000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (30279ms)">    at Empresa.login (/home/didimo/Área de Trabalho/bruna/robo_teste/Classes/BaseConnector.js:17:14)
+    at Object.Logar (/home/didimo/Área de Trabalho/bruna/robo_teste/tests/testeUm.js:94:28)</failure>
 
     
     </testcase>
@@ -81,6 +21,13 @@
 
     
 
+  
+    
+    <testcase
+      name="Primero Cadastro" classname="testeUm">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

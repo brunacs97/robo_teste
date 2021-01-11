@@ -171,6 +171,7 @@ module.exports = class Empresa extends BaseConnector {
                 //excluindo empresa
                 .waitForElementVisible('#main-content-wrapper > div > div.main-content > div:nth-child(10) > div > div > div.widget-content.list > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(3) > a', 30000)
                 .click('#main-content-wrapper > div > div.main-content > div:nth-child(10) > div > div > div.widget-content.list > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(3) > a')
+
             await this.removeChat();
             this.browser
                 .click('div.modal-dialog > div > div.modal-footer > form > button.btn.btn-danger')
@@ -197,7 +198,8 @@ module.exports = class Empresa extends BaseConnector {
                 .click('#formulario_equipamento > div > form > div.card-body > div > div:nth-child(5) > span > span.selection > span')
                 .setValue("body > span > span > span.select2-search.select2-search--dropdown > input", "a")
                 .waitForElementVisible('#select2-proprietario-results > li:nth-child(1)', 30000)
-                .click('#select2-proprietario-results > li:nth-child(1)')
+                // .click('#select2-proprietario-results > li:nth-child(1)')
+                .click('#select2-proprietario-results > li.select2-results__option.select2-results__option--highlighted')
                 //adicionando  Identificação/TAG:
                 .setValue("#formulario_equipamento > div > form > div.card-body > div > div:nth-child(6) > input", "'\"!@#$%&*()-+Aaç<>}70/, aãÂ")
                 //adicionando numero de serie
@@ -212,6 +214,36 @@ module.exports = class Empresa extends BaseConnector {
 
                 //selecionando Modo de Uso*:
                 .click('#uso_padrao')
+
+                //Adicionando data de fabricação
+                .setValue("#data_fabricacao", "05/01/2021")
+
+                //adicionando data de aquisição
+                .setValue("##data_aquisicao", "05/01/2021")
+
+                //adicionando valor de compra
+                .setValue("#valor_compra", "5260")
+
+                //adicionando valor residual
+                .setValue("#valor_residual", "5260")
+
+                //adicionando vida util
+                .setValue("#vida_util", "5")
+
+                //adicionando garantia
+                .setValue("#garantia", "05/01/2021")
+
+                //adicionando risco de operação
+                .setValue("#home > div > div:nth-child(7) > input", "6")
+
+                //clicando na aba informações extras
+                .click('#myTab > li.nav-item.active')
+
+
+
+
+
+
 
 
 
