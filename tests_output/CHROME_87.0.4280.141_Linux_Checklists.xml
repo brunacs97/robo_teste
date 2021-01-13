@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="Checklists"
+    errors="1" failures="0" hostname="" id="" package="Checklists" skipped="0"
+    tests="1" time="20.92" timestamp="">
+  
+    <testcase name="Demo test ecosia.org" classname="Checklists" time="20.92" assertions="3">
+
+    
+
+    
+
+    
+    <error message="An error occurred while running .click() command on &lt;#main-content-wrapper &gt; div &gt; div.main-content &gt; form &gt; div &gt; div &gt; div &gt; div &gt; div.widget-content &gt; div.row.items-row &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div &gt; a.btn.btn-sm.add-item&gt;: " type="error"><![CDATA[
+    NoSuchElementError: An error occurred while running .click() command on &lt;#main-content-wrapper &gt; div &gt; div.main-content &gt; form &gt; div &gt; div &gt; div &gt; div &gt; div.widget-content &gt; div.row.items-row &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div &gt; a.btn.btn-sm.add-item&gt;: 
+    at ClickElement.noSuchElementError (/home/didimo/Área de Trabalho/bruna/robo_cmms_procedimento/node_modules/nightwatch/lib/element/command.js:370:12)
+    at Object.errorHandler (/home/didimo/Área de Trabalho/bruna/robo_cmms_procedimento/node_modules/nightwatch/lib/api/element-commands/_baseElementCommand.js:42:30)
+    at PeriodicPromise.runAction (/home/didimo/Área de Trabalho/bruna/robo_cmms_procedimento/node_modules/nightwatch/lib/utils/periodic-promise.js:64:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .click() command on &lt;#main-content-wrapper &gt; div &gt; div.main-content &gt; form &gt; div &gt; div &gt; div &gt; div &gt; div.widget-content &gt; div.row.items-row &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div &gt; a.btn.btn-sm.add-item&gt;: 
+   {&#34;sessionId&#34;:&#34;8dfb7db4a7750d276ad958e9fd6eb635&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+   
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
