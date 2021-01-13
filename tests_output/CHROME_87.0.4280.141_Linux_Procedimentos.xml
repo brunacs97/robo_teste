@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
+<testsuites errors="0"
             failures="0"
             tests="1">
 
   <testsuite name="Procedimentos"
-    errors="1" failures="0" hostname="" id="" package="Procedimentos" skipped="0"
-    tests="1" time="26.61" timestamp="">
+    errors="0" failures="0" hostname="" id="" package="Procedimentos" skipped="0"
+    tests="1" time="43.68" timestamp="">
   
-    <testcase name="Demo test ecosia.org" classname="Procedimentos" time="26.61" assertions="5">
+    <testcase name="Demo test ecosia.org" classname="Procedimentos" time="43.68" assertions="11">
 
     
 
@@ -18,23 +18,21 @@
     
 
     
-    <error message="An error occurred while running .click() command on &lt;#select2-id_tipo-result-ajkm-991&gt;: " type="error"><![CDATA[
-    NoSuchElementError: An error occurred while running .click() command on &lt;#select2-id_tipo-result-ajkm-991&gt;: 
-    at ClickElement.noSuchElementError (/home/didimo/Área de Trabalho/bruna/robo_cmms_procedimento/node_modules/nightwatch/lib/element/command.js:370:12)
-    at Object.errorHandler (/home/didimo/Área de Trabalho/bruna/robo_cmms_procedimento/node_modules/nightwatch/lib/api/element-commands/_baseElementCommand.js:42:30)
-    at PeriodicPromise.runAction (/home/didimo/Área de Trabalho/bruna/robo_cmms_procedimento/node_modules/nightwatch/lib/utils/periodic-promise.js:64:29)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-    ]]></error>
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
     </testcase>
   
 
-  
-    <system-err>
-        NoSuchElementError: An error occurred while running .click() command on &lt;#select2-id_tipo-result-ajkm-991&gt;: 
-   {&#34;sessionId&#34;:&#34;b45ce37955b8f8bc423010eabdcdf413&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
-   
-    </system-err>
   
 
     
